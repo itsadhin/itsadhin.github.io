@@ -1,9 +1,29 @@
 body {
   font-family: system-ui, sans-serif;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
   line-height: 1.6;
 }
-header { text-align: center; margin-bottom: 2rem; }
-a { color: #0969da; }
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #6366f1, #ec4899, #f59e0b);
+  color: white;
+}
+header h1 { margin: 0; font-size: 2.5rem; }
+main { max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+h2 { color: #f472b6; }
+.cards { display: grid; gap: 1rem; }
+.card {
+  padding: 1.2rem;
+  background: #1e293b;
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: transform .2s, border-color .2s;
+}
+.card:hover { transform: translateY(-4px); border-color: #ec4899; }
+footer { text-align: center; padding: 2rem; }
+footer a { color: #38bdf8; }
